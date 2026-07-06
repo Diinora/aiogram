@@ -18,13 +18,35 @@ menu = ReplyKeyboardMarkup(
     ],
     resize_keyboard=True
 )
-
+menu = ReplyKeyboardMarkup(
+    keyboard=[
+        [
+            KeyboardButton(text="📚 Kitaplar"),
+            KeyboardButton(text="📝 Bánt etiw")
+        ],
+        [
+            KeyboardButton(text="⏰ Qaytarıw múddeti")
+        ]
+    ],
+    resize_keyboard=True
+)
 
 @dp.message(CommandStart())
 async def start(message: Message):
     await message.answer("Assalawma aleykum 😊",reply_markup=menu)
 
-
+menu = ReplyKeyboardMarkup(
+    keyboard=[
+        [
+            KeyboardButton(text="📚 Kitaplar"),
+            KeyboardButton(text="📝 Bánt etiw")
+        ],
+        [
+            KeyboardButton(text="⏰ Qaytarıw múddeti")
+        ]
+    ],
+    resize_keyboard=True
+)
 
 
 async def main():
