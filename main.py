@@ -35,6 +35,7 @@ menu = ReplyKeyboardMarkup(
 async def start(message: Message):
     await message.answer("Assalawma aleykum 😊",reply_markup=menu)
 
+<<<<<<< HEAD
 menu = ReplyKeyboardMarkup(
     keyboard=[
         [
@@ -48,6 +49,11 @@ menu = ReplyKeyboardMarkup(
     resize_keyboard=True
 )
 
+=======
+@dp.message(Command('email'))
+async def email(message: Message):
+    await message.answer("kadirbergenova",reply_markup=menu)
+>>>>>>> 442ee37927e630390e110b265480762f96adefe0
 
 async def main():
     print('bot iske qosildi')
